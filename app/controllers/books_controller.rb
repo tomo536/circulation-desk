@@ -2,7 +2,7 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.xml
   def index
-    @books = Book.all
+    @books = Book.find(:all, :order => 'pubdate DESC')
 
     respond_to do |format|
       format.html # index.html.erb
