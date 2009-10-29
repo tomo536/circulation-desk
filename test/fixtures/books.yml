@@ -1,15 +1,15 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  title: MyString
-  author: MyString
-  publisher: MyString
-  pubdate: 2009-10-29
-  price: 9.99
+  title: Ruby逆引きハンドブック
+  author: るびきち
+  publisher: シーアンドアール研究所
+  pubdate: 2009-06-01
+  price: 3800
 
 two:
-  title: MyString
-  author: MyString
-  publisher: MyString
-  pubdate: 2009-10-29
-  price: 9.99
+  title: WEB+DB PRESS Vol.51
+  author: WEB+DB PRESS編集部
+  publisher: 技術評論社
+  pubdate: 2009-10-24
+  price: 1480
