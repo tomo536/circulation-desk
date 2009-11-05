@@ -20,7 +20,7 @@
 
 <p>
   <b>Price:</b>
-  <%=h @book.price %>
+  <%=number_to_currency(@book.price, :precision =>0, :format=>"%n") %>
 </p>
 
 
