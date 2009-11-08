@@ -1,12 +1,15 @@
 <h1>Listing books</h1>
 
-<table>
-  <tr>
+<table border="1">
+  <tr style="background-color: #ccccff">
     <th>Title</th>
     <th>Author</th>
     <th>Publisher</th>
     <th>Pubdate</th>
     <th>Price</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
   </tr>
 
 <% @books.each do |book| %>
@@ -15,7 +18,7 @@
     <td><%=h book.author %></td>
     <td><%=h book.publisher %></td>
     <td><%=h book.pubdate %></td>
-    <td><%=h book.price %></td>
+    <td style="text-align: right"><%=number_to_currency(book.price, :precision =>0, :format=>"%n") %></td>
     <td><%= link_to 'Show', book %></td>
     <td><%= link_to 'Edit', edit_book_path(book) %></td>
     <td><%= link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete %></td>
